@@ -23,7 +23,7 @@ const Brands = () => {
         <div className={classes.brands__title}>БРЕНДЫ</div>
         <div className={classes.brands__title}>СМОТРЕТЬ ВСЕ</div>
       </div>
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex', marginRight: 40 }}>
         {brands.map((brand, index) => (
           <div
             className={classes.brand__navigation}

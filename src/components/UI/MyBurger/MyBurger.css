@@ -44,6 +44,8 @@
     transition-duration: 0.1s;
     transition-delay: .25s;
     background: transparent;
+    position: fixed;
+    z-index: 999;
 }
 .burger.open span:before {
     transition: top .25s, transform .25s .25s;

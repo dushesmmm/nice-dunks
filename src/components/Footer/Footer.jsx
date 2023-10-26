@@ -4,7 +4,7 @@ import logo from '../UI/icons/nicedunkslogo.png';
 
 const Footer = () => {
   const categories = ['НОВЫЕ ПОСТУПЛЕНИЯ', 'ПРЕДЗАКАЗ', 'ОДЕЖДА', 'АКСЕССУАРЫ', 'НОВЫЕ КРОССОВКИ', 'БРЕНДЫ', 'Б/У КРОССОВКИ'];
-  const aboutUsLinks = ['ДОСТАВКА И ОПЛАТА', 'КОНТАКТЫ', 'ВОПРОС - ОТВЕТ', 'ТЕЛЕГРАММ КАНАЛ'];
+  const aboutUsLinks = ['ДОСТАВКА И ОПЛАТА', 'КОНТАКТЫ', 'ВОПРОС - ОТВЕТ', 'ТЕЛЕГРАМ КАНАЛ'];
 
   return (
     <div className={classes.footer__wrapper}>

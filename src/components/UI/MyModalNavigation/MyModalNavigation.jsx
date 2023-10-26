@@ -110,7 +110,7 @@ const MyModalNavigation = ({ visible, setVisible }) => {
           }`}
           onClick={() => toggleMenu('telegram')}
         >
-          ТЕЛЕГРАММ КАНАЛ
+          ТЕЛЕГРАМ КАНАЛ
         </li>
         <li style={{marginBottom: 10}}
           className={`${classes.myModalNavigation__content} ${

@@ -8,8 +8,8 @@
     width: 706px;
     max-height: 100vh;
     transition: left 0.5s ease;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
 }
 
 .active {
@@ -25,6 +25,7 @@
     margin-left: 10px;
     margin-top: 16px;
     margin-bottom: 16px;
+    user-select: none;
 }
 
 .myModalNavigation__line {
