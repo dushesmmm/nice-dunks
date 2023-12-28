@@ -1,0 +1,40 @@
+.info__wrapper {
+    margin-top: 175px;
+    margin-left: 240px;
+    display: flex;
+    margin-right: 730px;
+}
+
+.info__name {
+    color: #AC8BD5;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 10px;
+
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+    text-align: end;
+    text-transform: uppercase;
+}
+
+.info__description {
+    color: #000;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 2px;
+
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+
+    margin-bottom: 300px;
+}

@@ -16,3 +16,11 @@
     height: 54px;
     flex-shrink: 0;
 }
+
+@media (max-width: 767px) {
+    .banner {
+        background-image: url(./phonebanner.jpg);
+    }
+}
+
+

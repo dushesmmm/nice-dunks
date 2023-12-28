@@ -1,0 +1,39 @@
+.brands__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brands__title {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 30px 40px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.brand__navigation {
+    color: #FFF;
+    font-size: 75px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    width: 23%;
+    height: 750px;
+    text-align: center;
+    display: grid;
+    align-items: end;
+    margin-left: 40px;
+    
+    cursor: pointer;
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+}

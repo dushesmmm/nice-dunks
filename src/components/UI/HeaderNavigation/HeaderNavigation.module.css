@@ -1,18 +1,19 @@
 .HeaderNavigation__wrapper {
     display: flex;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2.2vw;
+    margin-right: 2.2vw;
     justify-content: space-between;
 }
 
 .HeaderNavigation {
     margin-top: 38px;
     color: #000;
-    font-size: 15px;
+    font-size: 1.04vw;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    white-space: nowrap;
 
     cursor: pointer;
     -ms-user-select: none; 
@@ -34,5 +35,5 @@
 
 .preorderButton:hover {
     color: #000;
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-in;
 }

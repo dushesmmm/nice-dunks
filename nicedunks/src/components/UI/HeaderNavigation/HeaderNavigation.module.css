@@ -1,0 +1,38 @@
+.HeaderNavigation__wrapper {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: space-between;
+}
+
+.HeaderNavigation {
+    margin-top: 38px;
+    color: #000;
+    font-size: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    cursor: pointer;
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+}
+
+.preorderButton {
+    color: #AC8BD5;
+    margin-right: 100px;
+
+}
+
+.HeaderNavigation:hover {
+    color: #AC8BD5;
+    transition: 0.3s ease-out;
+}
+
+.preorderButton:hover {
+    color: #000;
+    transition: 0.3s ease-out;
+}

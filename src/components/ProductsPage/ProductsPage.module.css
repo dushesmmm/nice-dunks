@@ -1,0 +1,113 @@
+.ProductsPage__Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: 16%;
+    margin-top: 200px;
+}
+
+.ProductsPage__Filters {
+    margin-left: 8%;
+
+}
+.ProductsPage__Filters p{
+    color: #AC8BD5;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.ProductsPage__Filters li{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
+}
+.ProductsPage__Filters li:hover{
+    transition: 0.3s ease-out;
+    color: #AC8BD5;
+}
+
+.product__card {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 23%;
+    border-top: 1px solid black; 
+    border-right: 1px solid black; 
+    border-bottom: 1px solid black; 
+    height: 48vh;
+    cursor: pointer;
+}
+
+.product__card:not(:nth-child(-1n +4)) {
+    border-top: 0px solid black;
+  }
+
+.product__card:hover {
+    border-color: #AC8BD5;
+    box-shadow: -2px 0 0 1px #AC8BD5, 0 0 0 2px #AC8BD5;
+    z-index: 2;
+    transition: 0.3s ease-out;
+}
+  
+.product__card img {
+    max-width: 75%;
+    align-self: center;
+    object-position: center bottom;
+    margin-bottom: 10px;
+}
+  
+.product__card h2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.product__card:hover h2 {
+    transition: 0.3s ease-out;
+    color: #AC8BD5;
+}
+
+.Products__Wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    width: calc(100% - 16% - 15px);
+    border-left: 1px solid black;
+}
+
+.Options {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+.Options button {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+  
+.Options button.SelectedOption {
+    background-color: #AC8BD5;
+    color: #fff;
+}
+
+.Options button:hover  {
+    transition: 0.3s ease-out;
+    background-color: #AC8BD5;
+    color: #fff;
+}

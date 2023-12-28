@@ -2,29 +2,33 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    left: -706px;
+    left: -37%;
     display: block;
     background: rgb(255, 255, 255);
-    width: 706px;
+    width: 37%;
     max-height: 100vh;
     transition: left 0.5s ease;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+    box-shadow: 3px 2px 20px 0px #00000085;
+    z-index: 10;
 }
 
 .active {
     left: 0;
+
 }
 
 .myModalNavigation__title {
     color: #000;
-    font-size: 15px;
+    font-size: calc(9px + 8 * ((100vw - 320px) / 1600));
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    margin-left: 10px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-left: 0.5vw;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    user-select: none;
 }
 
 .myModalNavigation__line {
@@ -35,17 +39,17 @@
 
 .myModalNavigation__link {
     color: #000;
-    font-size: 20px;
+    font-size: calc(12px + 8 * ((100vw - 320px) / 1600));
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-left: 23px;
-    margin-bottom: 5px;
+    margin-left: 1.2vw;
+    margin-bottom: 0.2vh;
 }
 
 .myModalNavigation__accordion {
-    height: 120px;
+    height: 6.7vh;
     width: 100%;
 }
 
@@ -54,13 +58,13 @@
     overflow: hidden;
     transition: max-height 0.5s ease;
     color: #000;
-    font-size: 16px;
+    font-size: calc(9px + 8 * ((100vw - 320px) / 1600));
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-left: 23px;
-    margin-top: 5px;
+    margin-left: 1.2vw;
+    margin-top: 0.2vh;
 }
 
 .myModalNavigation__link {
@@ -72,7 +76,7 @@
 }
 
 .open {
-    max-height: 1000px;
+    max-height: 55.6vh;
     transition: all height 2s ease;
 }
 
@@ -95,13 +99,13 @@ a {
     overflow: hidden;
     transition: max-height 0.5s ease;
     color: #000;
-    font-size: 16px;
+    font-size: calc(9px + 8 * ((100vw - 320px) / 1600));
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 5px;
-    text-underline-offset: 5px;
+    margin-top: 0.2vh;
+    text-underline-offset: 0.2vh;
     text-transform: uppercase;
     transition: 0.3s ease-out;
 }
@@ -112,14 +116,15 @@ a:hover {
 
 p {
     color: #AC8BD5;
+    margin-bottom: 10px;
 }
 
 .myModalNavigation__logo {
     display: flex;
-    margin-left: 25%;
-    margin-top: 20%;
-    margin-bottom: auto;
+    align-items: center;
     cursor: default;
+    justify-content: center;
+    margin-top: 10%;
 }
 
 .myModalNavigation__link:hover {
@@ -133,5 +138,23 @@ p {
 
 .purple:hover {
     color: #000000;
-    transition: 0.3s ease-out;
+    transition: 0.3s ease-in;
 }
+
+.myModalNavigation__logo img {
+    max-width: 75%;
+    height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .myModalNavigation {
+        width: 100%;
+        left: -100vw;
+        box-shadow: none;
+    }
+    .active {
+        left: 0;
+        overflow: hidden;
+    }
+}
+

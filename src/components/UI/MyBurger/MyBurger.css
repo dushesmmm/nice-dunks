@@ -1,11 +1,11 @@
 .burger {
     display: flex;
     width: 60px;
-    height: 45px;
+    height: 20px;
     transition-duration: 1s;
-    margin: 40px 40px;
+    padding-top: 40px;
+    padding-left: 40px;
     cursor: pointer;
-    
 }
 .burger span {
     height: 3px;
@@ -44,6 +44,8 @@
     transition-duration: 0.1s;
     transition-delay: .25s;
     background: transparent;
+    position: fixed;
+    z-index: 999;
 }
 .burger.open span:before {
     transition: top .25s, transform .25s .25s;

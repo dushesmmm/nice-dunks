@@ -80,7 +80,7 @@ const MyModalNavigation = ({ visible, setVisible }) => {
           <br/><a href="https://vk.com/nicedunks" className='classes.myModalNavigation__link'>основная страница в вк</a><br />
           <br/><a href="https://www.avito.ru/user/c560662529d1530f9fab8dd500a9934e/profile?src=sharing" className='classes.myModalNavigation__link'>мой профиль на авито</a><br />
           <br/><a href="https://instagram.com/donalddunks/" className='classes.myModalNavigation__link'>аккаунт для продаж в инстаграмме</a><br />
-          <br/><a href="https://t.me/NiceDunksManager" className='classes.myModalNavigation__link'>менеджер по предзаказам</a><br /><br />
+          <br/><a href="https://t.me/NiceDunksManager" className='classes.myModalNavigation__link'>менеджер по предзаказам</a><br /><br /><br />
         </li>
       </ul>
       <ul>
@@ -97,10 +97,10 @@ const MyModalNavigation = ({ visible, setVisible }) => {
             activeMenu === 'faq' ? classes.open : ''
           }`}
         >
-          <br /><p>Все ваши товары оригинал?</p><br /><br />Да, у нас строго оригинальная продукция. Каждый товар проходит индивидуальную проверку.<br /><br />
-          <p>Какие у вас гарантии?</p><br /><br />Более тысячи положительных отзывов с 2017 года в профиле <a href="https://vk.com/wall170701681_4583">вк</a> и  <a href="https://www.avito.ru/user/c560662529d1530f9fab8dd500a9934e/profile?src=sharing">авито</a>.<br /><br />
-          <p>Как быстро приходит товар по предзаказу?</p><br /><br />Сроки доставки товаров по предзаказу составляют 14-21 день. Возможна экспресс доставка.<br /><br />
-          <p>Что делать, если желаемого товара нет на сайте?</p><br /><br />Если интересующей позиции нет на сайте, она доступна по предзаказу. Обращайтесь по предзаказу к нашему <a href="https://t.me/NiceDunksManager">менеджеру</a>.<br /><br />
+          <br /><p>Все ваши товары оригинал?</p>Да, у нас строго оригинальная продукция. Каждый товар проходит индивидуальную проверку.<br /><br />
+          <p>Какие у вас гарантии?</p>Более тысячи положительных отзывов с 2017 года в профиле <a href="https://vk.com/wall170701681_4583">вк</a> и  <a href="https://www.avito.ru/user/c560662529d1530f9fab8dd500a9934e/profile?src=sharing">авито</a>.<br /><br />
+          <p>Как быстро приходит товар по предзаказу?</p>Сроки доставки товаров по предзаказу составляют 14-21 день. Возможна экспресс доставка.<br /><br />
+          <p>Что делать, если желаемого товара нет на сайте?</p>Если интересующей позиции нет на сайте, она доступна по предзаказу. Обращайтесь по предзаказу к нашему <a href="https://t.me/NiceDunksManager">менеджеру</a>.<br /><br />
         </li>
       </ul>
       <ul>
@@ -110,14 +110,14 @@ const MyModalNavigation = ({ visible, setVisible }) => {
           }`}
           onClick={() => toggleMenu('telegram')}
         >
-          ТЕЛЕГРАММ КАНАЛ
+          ТЕЛЕГРАМ КАНАЛ
         </li>
         <li style={{marginBottom: 10}}
           className={`${classes.myModalNavigation__content} ${
             activeMenu === 'telegram' ? classes.open : ''
           }`}
         >
-          <br />В моём <a href="https://t.me/NiceDunks">телеграм канале</a> вы сможете одними из первых <br />узнавать не только о новых релизах, но и последних новостях из <br />сникер - индустрии. <br /><br /> Также в канале вы найдёте некоторые позиции, которых нет <br />на сайте и узнаете об историях, которые стоят за дизайнами кроссовок. <br />
+          <br />В моём <a href="https://t.me/NiceDunks">телеграм канале</a> вы сможете одними из первых <br />узнавать не только о новых релизах, но и последних новостях из <br />сникер - индустрии. <br /><br /> Также в канале вы найдёте некоторые позиции, которых нет <br />на сайте и узнаете об историях, которые стоят за дизайнами кроссовок. <br /> 
         </li>
       </ul>
       <div className={classes.myModalNavigation__line}></div>
@@ -127,6 +127,6 @@ const MyModalNavigation = ({ visible, setVisible }) => {
       </div>
     </div>
   );
-};
+}
 
 export default MyModalNavigation;

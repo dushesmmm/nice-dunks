@@ -4,7 +4,7 @@ import logo from '../UI/icons/nicedunkslogo.png';
 
 const Footer = () => {
   const categories = ['НОВЫЕ ПОСТУПЛЕНИЯ', 'ПРЕДЗАКАЗ', 'ОДЕЖДА', 'АКСЕССУАРЫ', 'НОВЫЕ КРОССОВКИ', 'БРЕНДЫ', 'Б/У КРОССОВКИ'];
-  const aboutUsLinks = ['ДОСТАВКА И ОПЛАТА', 'КОНТАКТЫ', 'ВОПРОС - ОТВЕТ', 'ТЕЛЕГРАММ КАНАЛ'];
+  const aboutUsLinks = ['ДОСТАВКА И ОПЛАТА', 'КОНТАКТЫ', 'ВОПРОС - ОТВЕТ', 'ТЕЛЕГРАМ КАНАЛ'];
 
   return (
     <div className={classes.footer__wrapper}>
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 50, marginTop: 35 }}>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '12vh', marginTop: '7vh' }}>
         <img src={logo} alt="logo" />
       </div>
     </div>

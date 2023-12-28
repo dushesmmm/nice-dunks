@@ -21,7 +21,7 @@ const HeaderNavigation = () => {
 
   return (
     <div className={classes.HeaderNavigation__wrapper}>
-      <img src={search} alt="поиск" style={{ marginTop: 36, cursor: 'pointer' }} />
+      <img src={search} alt="поиск" style={{ marginTop: 36, cursor: 'pointer', marginLeft: 0, marginRight: 0 }} />
       {headerWords.map((word, index) => (
         <div
           className={`${classes.HeaderNavigation} ${
@@ -33,7 +33,7 @@ const HeaderNavigation = () => {
           {word}
         </div>
       ))}
-      <img src={cart} alt="корзина" style={{ marginTop: 36 , cursor: 'pointer'}}  />
+      <img src={cart} alt="корзина" style={{ marginTop: 36, cursor: 'pointer', marginLeft: 0, marginRight: 0}}  />
     </div>
   );
 };
