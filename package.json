@@ -6,17 +6,25 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.0",
+    "axios": "^1.6.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-dropdown-select": "^4.10.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-snap": "^1.16.0",
+    "slick-carousel": "1.8.1",
+    "style-loader": "^3.3.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
@@ -34,6 +42,29 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "webpack": "^5.90.3"
+  },
+  "reactSnap": {
+    "inlineCss": true,
+    "fixWebpackChunksIssue": true,
+    "include" : [
+      "/",
+      "/dir/",
+      "/all products",
+      "/product/BV1310-100",
+      "/product/ct8532-080",
+      "/product/M2002RDH",
+      "/product/AV4438-001",
+      "/product/BQ6449-001",
+      "/product/DD3357-100",
+      "/product/DH7138-506",
+      "/product/FW23H3 BLACK",
+      "/product/555088-106",
+      "/faq",
+      "/404"
     ]
   }
 }

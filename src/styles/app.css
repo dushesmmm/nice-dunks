@@ -11,3 +11,7 @@ img {
     -ms-user-select: none;
     user-select: none;
 }
+
+body {
+    background-color: white;
+}

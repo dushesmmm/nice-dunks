@@ -1,0 +1,89 @@
+.MyPopup__wrapper {
+    font-family: Montserrat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .Image_wrappper {
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    visibility: hidden;
+  }
+
+  .Image_wrappper img {
+    width: 20px;
+    height: 20px;
+    max-width: 100%;
+  }
+  
+  .MyPopup {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    padding-top: 10px;
+    overflow-y: scroll;
+    overscroll-behavior: auto;
+    max-height: 90%;
+  }
+
+  .MyPopup__title {
+    text-align: center;
+    color: #000;
+    font-size: calc(12px + 8*((100vw - 320px) / 1600));
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 10px 0px;
+  }
+  
+  .MyPopup_content {
+    overflow-y: auto;
+  }
+  
+  .MyPopup_sizeTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .MyPopup_sizeTable th,
+  .MyPopup_sizeTable td {
+    border: 1px solid #ddd;
+    padding: .55rem 1.85rem;
+    text-align: center;
+  }
+  
+  .MyPopup_sizeTable th {
+    background-color: #AC8BD5;
+    color: #fff;
+  }
+  
+  @media (max-width: 550px) {
+    .Image_wrappper {
+      visibility: visible;
+      right: 0%;
+      top: 0%;
+      z-index: 99999999;
+    }
+    .MyPopup {
+      padding: 0;
+      width: 100%;
+      max-height: 100%;
+    }
+    .MyPopup_content {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }

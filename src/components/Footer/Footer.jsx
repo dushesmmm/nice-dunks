@@ -3,15 +3,36 @@ import classes from './Footer.module.css';
 import logo from '../UI/icons/nicedunkslogo.png';
 
 const Footer = () => {
-  const categories = ['НОВЫЕ ПОСТУПЛЕНИЯ', 'ПРЕДЗАКАЗ', 'ОДЕЖДА', 'АКСЕССУАРЫ', 'НОВЫЕ КРОССОВКИ', 'БРЕНДЫ', 'Б/У КРОССОВКИ'];
-  const aboutUsLinks = ['ДОСТАВКА И ОПЛАТА', 'КОНТАКТЫ', 'ВОПРОС - ОТВЕТ', 'ТЕЛЕГРАМ КАНАЛ'];
+  const categoryMapping = {
+    'НОВЫЕ ПОСТУПЛЕНИЯ': '',
+    'ПРЕДЗАКАЗ': 'preorder',
+    'ОДЕЖДА': 'clothes',
+    'АКСЕССУАРЫ': 'accessories',
+    'НОВЫЕ КРОССОВКИ': 'newSneakers',
+    'Б/У КРОССОВКИ': 'used',
+  };
+
+  const aboutUsLinks = ['ДОСТАВКА', 'КОНТАКТЫ', 'ВОПРОС - ОТВЕТ'];
+
+  const handleCategoryClick = (category) => {
+    const englishCategory = categoryMapping[category] || '';
+    window.location.href = `/all%20products?category=${englishCategory}`;
+  };
+
+  const handleTelegramClick = () => {
+    window.location.href = 'https://t.me/NiceDunks';
+  };
 
   return (
     <div className={classes.footer__wrapper}>
       <div className={classes.footer__title}>КАТЕГОРИИ</div>
       <div className={classes.footer__links}>
-        {categories.map((category, index) => (
-          <div className={`${classes.footer__link} ${category === 'ПРЕДЗАКАЗ' ? classes.preorderLink : ''}`} key={index}>
+        {Object.keys(categoryMapping).map((category, index) => (
+          <div
+            className={`${classes.footer__link} ${category === 'ПРЕДЗАКАЗ' ? classes.preorderLink : ''}`}
+            key={index}
+            onClick={() => handleCategoryClick(category)}
+          >
             {category}
           </div>
         ))}
@@ -21,13 +42,20 @@ const Footer = () => {
       </div>
       <div className={classes.footer__links}>
         {aboutUsLinks.map((link, index) => (
-          <div className={`${classes.footer__link} ${link === 'КОНТАКТЫ' ? classes.contactsLink : ''}`} key={index}>
+          <div
+            className={`${classes.footer__link} ${link === 'КОНТАКТЫ' ? classes.contactsLink : ''}`}
+            key={index}
+            onClick={() => window.location.href = `/faq`}
+          >
             {link}
           </div>
         ))}
+        <div className={classes.footer__link} onClick={handleTelegramClick}>
+          ТЕЛЕГРАМ КАНАЛ
+        </div>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 50, marginTop: 35 }}>
-        <img src={logo} alt="logo" />
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '12vh', marginTop: '7vh' }}>
+        <img src={logo} alt="логотип NiceDunks" />
       </div>
     </div>
   );

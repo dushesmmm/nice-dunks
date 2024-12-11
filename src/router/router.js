@@ -1,11 +1,13 @@
-import Jordan from "../components/pages/Jordan/Jordan";
-import NewBalance from "../components/pages/NewBalance/NewBalance";
-import Nike from "../components/pages/Nike/Nike";
-import NikeSB from "../components/pages/NikeSB/NikeSB";
+import ProductPage from '../components/pages/ProductPage/ProductPage';
+import MainPage from '../components/pages/MainPage/MainPage';
+import AllProducts from '../components/pages/AllProducts/AllProducts';
+import Faq from '../components/pages/FAQ/Faq';
+import NotFound from '../components/pages/NotFound/NotFound';
 
 export const routes = [
-    {path: '/brands/nike', element: <Nike />, key: 0},
-    {path: '/brands/nike-sb', element: <NikeSB />, key: 1},
-    {path: '/brands/new-balance', element: <NewBalance />, key: 2},
-    {path: '/brands/jordan', element: <Jordan />, key: 3}
-]
+    { path: '/', element: <MainPage />, key: 'main' },
+    { path: '/product/:vendorCode', element: <ProductPage />, key: 'product-details' },
+    { path: '/all products', element: <AllProducts/>, key: 'all-products'},
+    { path: '/faq', element: <Faq />, key: 'faq'},
+    { path: '/404', element: <NotFound />, key: 'not-found'}
+];

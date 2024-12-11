@@ -1,11 +1,17 @@
-.brands__wrapper {
+.navigation {
     display: flex;
     justify-content: space-between;
 }
 
-.brands__title {
+.title:nth-child(2):hover {
+    transition: 0.3s ease-out;
+    color: #AC8BD5;
+    cursor: pointer;
+}
+
+.title {
     color: #000;
-    font-size: 20px;
+    font-size: calc(12px + 8 * ((100vw - 320px) / 1600));
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -16,24 +22,46 @@
     user-select: none;
 }
 
-.brand__navigation {
+.banner__navigation {
     color: #FFF;
-    font-size: 75px;
+    font-size: 4vw;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    background-position: center;
 
-    width: 23%;
-    height: 750px;
+    width: calc(25% - 2.7vw - 1px);
+    height: 81vh;
+    max-height: 750px;
     text-align: center;
     display: grid;
     align-items: end;
-    margin-left: 40px;
+    margin-left: 2.2vw;
     
     cursor: pointer;
     -ms-user-select: none; 
 	-moz-user-select: none; 
 	-webkit-user-select: none; 
 	user-select: none;
+}
+
+@media (max-width: 1025px) {
+    .banner__navigation {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner__navigation {
+        height: 50vh;
+    }
+}
+@media (max-width: 500px) {
+    .banner__navigation {
+        width: 96vw;
+        height: 96vw;
+        margin-bottom: 2.2vw;
+        font-size: 7vw;
+    }
 }

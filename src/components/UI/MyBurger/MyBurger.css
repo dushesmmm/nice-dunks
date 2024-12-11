@@ -1,11 +1,11 @@
 .burger {
     display: flex;
     width: 60px;
-    height: 45px;
+    height: 20px;
     transition-duration: 1s;
-    margin: 40px 40px;
+    padding-top: 52px;
+    padding-left: 40px;
     cursor: pointer;
-    
 }
 .burger span {
     height: 3px;
@@ -19,7 +19,7 @@
 .burger span:before {
     left: 0;
     position: absolute;
-    top: -11px;
+    top: -12px;
     height: 3px;
     width: 47px;
     background-color: #ffffff;
@@ -31,7 +31,7 @@
 .burger span:after {
     left: 0;
     position: absolute;
-    top: 11px;
+    top: 12px;
     height: 3px;
     width: 47px;
     background-color: #ffffff;

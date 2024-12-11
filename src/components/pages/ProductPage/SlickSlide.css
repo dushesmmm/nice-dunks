@@ -1,0 +1,38 @@
+.slick-slide > div {
+    display: grid;
+    place-items: center;
+    width: 80%;
+    margin-top: 50px;
+    margin: auto;
+    height: 500px;
+    padding: 0px;
+  }
+
+.slick-slide > div :focus-visible {
+    outline: none;
+}
+
+.slick-prev {
+    margin-left: 40px;
+    z-index: 10;
+}
+.slick-next {
+    margin-right: 40px;
+    z-index: 10;
+    right: 0;
+}
+
+.slick-prev:before, .slick-next:before {
+    content: '';
+    font-size: none;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #ac8bd5;
+}
+
+.slick-dots li button:before {
+    color: #AC8BD5;
+    opacity: 0.5;
+}
