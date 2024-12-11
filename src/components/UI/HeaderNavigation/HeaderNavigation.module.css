@@ -55,7 +55,11 @@
 .HeaderNavigation {
     margin-top: 38px;
     color: #000;
+<<<<<<< HEAD
     font-size: calc(7px + 8*((100vw - 320px) / 1600));
+=======
+    font-size: 1.04vw;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;

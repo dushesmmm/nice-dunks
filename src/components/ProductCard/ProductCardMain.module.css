@@ -20,7 +20,10 @@
 .product__card:nth-child(-1n +4) {
   border-top: 2px solid black;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 .product__card:not(:nth-child(-1n +4)) {
   border-bottom: 2px solid black;
 }
@@ -44,6 +47,10 @@
   align-self: flex-end;
   color: #000;
   font-family: Montserrat;
+<<<<<<< HEAD
+=======
+  font-size: 15px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -57,6 +64,7 @@
 .product__card p {
   margin: 8px 0;
 }
+<<<<<<< HEAD
 
 @media (max-width: 1025px) {
   .product__card {
@@ -91,3 +99,5 @@
     border-bottom: 2px solid black;
   }
 }
+=======
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67

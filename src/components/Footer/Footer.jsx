@@ -3,6 +3,7 @@ import classes from './Footer.module.css';
 import logo from '../UI/icons/nicedunkslogo.png';
 
 const Footer = () => {
+<<<<<<< HEAD
   const categoryMapping = {
     'НОВЫЕ ПОСТУПЛЕНИЯ': '',
     'ПРЕДЗАКАЗ': 'preorder',
@@ -22,6 +23,10 @@ const Footer = () => {
   const handleTelegramClick = () => {
     window.location.href = 'https://t.me/NiceDunks';
   };
+=======
+  const categories = ['НОВЫЕ ПОСТУПЛЕНИЯ', 'ПРЕДЗАКАЗ', 'ОДЕЖДА', 'АКСЕССУАРЫ', 'НОВЫЕ КРОССОВКИ', 'БРЕНДЫ', 'Б/У КРОССОВКИ'];
+  const aboutUsLinks = ['ДОСТАВКА И ОПЛАТА', 'КОНТАКТЫ', 'ВОПРОС - ОТВЕТ', 'ТЕЛЕГРАМ КАНАЛ'];
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 
   return (
     <div className={classes.footer__wrapper}>
@@ -55,7 +60,11 @@ const Footer = () => {
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '12vh', marginTop: '7vh' }}>
+<<<<<<< HEAD
         <img src={logo} alt="логотип NiceDunks" />
+=======
+        <img src={logo} alt="logo" />
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
       </div>
     </div>
   );

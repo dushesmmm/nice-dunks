@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .Wrapper {
+=======
+.ProductsPage__Wrapper {
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -6,6 +10,7 @@
     margin-top: 200px;
 }
 
+<<<<<<< HEAD
 .Filters {
     margin-left: 6%;
     height: 90%;
@@ -69,25 +74,49 @@
     color: #AC8BD5;
     font-family: Montserrat;
     font-size: calc(7px + 8*((100vw - 320px) / 1600));
+=======
+.ProductsPage__Filters {
+    margin-left: 8%;
+
+}
+.ProductsPage__Filters p{
+    color: #AC8BD5;
+    font-family: Montserrat;
+    font-size: 15px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
+<<<<<<< HEAD
 .Filters li{
     font-family: Montserrat;
     font-size: calc(7px + 8*((100vw - 320px) / 1600));
+=======
+.ProductsPage__Filters li{
+    font-family: Montserrat;
+    font-size: 15px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-top: 5px;
 }
+<<<<<<< HEAD
 .Filters li:hover{
+=======
+.ProductsPage__Filters li:hover{
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     transition: 0.3s ease-out;
     color: #AC8BD5;
 }
 
 .product__card {
     display: flex;
+<<<<<<< HEAD
+=======
+    height: 100%;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     flex-direction: column;
     width: 23%;
     border-top: 1px solid black; 
@@ -118,7 +147,11 @@
 .product__card h2 {
     color: #000;
     font-family: Montserrat;
+<<<<<<< HEAD
     font-size: calc(7px + 8*((100vw - 320px) / 1600));
+=======
+    font-size: 13px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -152,6 +185,7 @@
     padding: 5px;
     cursor: pointer;
     border: 1px solid #000;
+<<<<<<< HEAD
     color: black !important;
     background-color: #fff;
     font-size: calc(7px + 8*((100vw - 320px) / 1600));
@@ -160,12 +194,21 @@
 .Options button.SelectedOption {
     background-color: #AC8BD5 !important;
     color: #fff !important;
+=======
+    background-color: #fff;
+}
+  
+.Options button.SelectedOption {
+    background-color: #AC8BD5;
+    color: #fff;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 }
 
 .Options button:hover  {
     transition: 0.3s ease-out;
     background-color: #AC8BD5;
     color: #fff;
+<<<<<<< HEAD
 }
 
 @media (max-width: 1025px ) {
@@ -346,3 +389,6 @@
 
 
 
+=======
+}
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67

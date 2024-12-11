@@ -7,11 +7,19 @@ ins {
     outline: none;
 }
 
+<<<<<<< HEAD
 .react-dropdown-select:hover, .react-dropdown-select:focus-within {
     border-color: #AC8BD5 !important;
 }
 
 .react-dropdown-select:focus, .react-dropdown-select:focus-within {
+=======
+.css-wmy1p7-ReactDropdownSelect:hover, .css-wmy1p7-ReactDropdownSelect:focus-within {
+    border-color: #AC8BD5 !important;
+}
+
+.css-wmy1p7-ReactDropdownSelect:focus, .css-wmy1p7-ReactDropdownSelect:focus, .css-wmy1p7-ReactDropdownSelect:focus-within {
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     outline: 0;
     box-shadow: 0 0 0 3px #AC8BD5 !important;
     z-index: 2;
@@ -21,10 +29,17 @@ ins {
     color: #000000 !important;
 }
 
+<<<<<<< HEAD
 .react-dropdown-select {
     border-color: #000000 !important;
     border-radius: 0 !important;
     margin-top: 20px !important;
+=======
+.css-wmy1p7-ReactDropdownSelect {
+    border-color: #000000 !important;
+    border-radius: 0;
+    margin-top: 20px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     width: 288px !important;
 }
 
@@ -45,6 +60,7 @@ ins {
     font-size: smaller;
     cursor: pointer;
     text-align: center;
+<<<<<<< HEAD
 }
 
 @media (max-width: 1000px) {
@@ -75,4 +91,6 @@ ins {
     .dropdownContainer {
         width: 49vw;
     }
+=======
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 }

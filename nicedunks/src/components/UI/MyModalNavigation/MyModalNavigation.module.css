@@ -1,0 +1,138 @@
+.myModalNavigation {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -706px;
+    display: block;
+    background: rgb(255, 255, 255);
+    width: 706px;
+    max-height: 100vh;
+    transition: left 0.5s ease;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+}
+
+.active {
+    left: 0;
+}
+
+.myModalNavigation__title {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    user-select: none;
+}
+
+.myModalNavigation__line {
+    width: 100%;
+    background-color: black;
+    height: 1px;
+}
+
+.myModalNavigation__link {
+    color: #000;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 23px;
+    margin-bottom: 5px;
+}
+
+.myModalNavigation__accordion {
+    height: 120px;
+    width: 100%;
+}
+
+.myModalNavigation__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    color: #000;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 23px;
+    margin-top: 5px;
+}
+
+.myModalNavigation__link {
+    cursor: pointer;
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+}
+
+.open {
+    max-height: 1000px;
+    transition: all height 2s ease;
+}
+
+li {
+    list-style: none;
+    
+}
+
+ul {
+    padding: 0;
+    cursor: pointer;
+    -ms-user-select: none; 
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+}
+
+a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    color: #000;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
+    text-underline-offset: 5px;
+    text-transform: uppercase;
+    transition: 0.3s ease-out;
+}
+
+a:hover {
+    color: #AC8BD5;
+}
+
+p {
+    color: #AC8BD5;
+}
+
+.myModalNavigation__logo {
+    display: flex;
+    margin-left: 25%;
+    margin-top: 20%;
+    margin-bottom: auto;
+    cursor: default;
+}
+
+.myModalNavigation__link:hover {
+    color: #AC8BD5;
+    transition: 0.3s ease-out;
+}
+
+.purple {
+    color: #AC8BD5;
+}
+
+.purple:hover {
+    color: #000000;
+    transition: 0.3s ease-out;
+}

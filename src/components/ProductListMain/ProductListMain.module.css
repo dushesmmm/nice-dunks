@@ -16,17 +16,25 @@
     font-weight: 500;
     line-height: normal;
     margin: 4vh 2.2vw;
+<<<<<<< HEAD
     
+=======
+    cursor: pointer;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 
     user-select: none;
     -webkit-user-select: none;
 }
 
+<<<<<<< HEAD
 .product__title:last-child {
     cursor: pointer;
 }
 
 .product__title:last-child:hover {
+=======
+.product__title:hover {
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     color: #AC8BD5;
     transition: 0.3s ease-out;
 }

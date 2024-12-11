@@ -7,17 +7,21 @@ import MyModalNavigation from '../../UI/MyModalNavigation/MyModalNavigation';
 import Brands from '../../Brands/Brands';
 import Footer from '../../Footer/Footer';
 import ProductList from '../../ProductListMain/ProductListMain';
+<<<<<<< HEAD
 import searchIcon from '../../UI/icons/searchmain.svg'
 import searchIconModal from '../../UI/icons/search.svg'
 import { useCart } from '../../Cart/CartContext';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet'
 import Close from '../../UI/icons/close.svg'
+=======
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 
 const MainPage = ({cartItems}) => {
   const { cart } = useCart();
   const [modalVisible, setModalVisible] = useState(false);
   const [products, setProducts] = useState([]);
+<<<<<<< HEAD
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -30,6 +34,13 @@ const MainPage = ({cartItems}) => {
       .then((data) => {
         setProducts(data);
       })
+=======
+
+  useEffect(() => {
+    fetch('http://78.40.217.250:8081/api/sneakers')
+      .then((response) => response.json())
+      .then((data) => setProducts(data))
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
       .catch((error) => console.error('ошибка', error));
   }, []);
 

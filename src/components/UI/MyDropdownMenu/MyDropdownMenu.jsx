@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Dropdown from 'react-dropdown-select';
 import classes from './MyDropdownMenu.module.css';
 import './MyDropdownMenu.css';
+<<<<<<< HEAD
 import { useCart } from '../../Cart/CartContext';
 
 const MyDropdownMenu = ({ sizes, category, vendorCode, img, price, color, brand }) => {
@@ -46,6 +47,44 @@ const MyDropdownMenu = ({ sizes, category, vendorCode, img, price, color, brand 
     setOptions(generateOptions(renderOptionLabel));
   }, [category, sizes]);
   
+=======
+
+const MyDropdownMenu = ({ sizes, category }) => {
+  const [selectedSize, setSelectedSize] = useState(null);
+  const [options, setOptions] = useState([]);
+  const availableSizes = sizes.map((size) => parseFloat(size));
+
+  useEffect(() => {
+    const generateOptions = () => {
+      if (category.accessories) {
+        const isONESIZEAvailable = sizes.includes('ONESIZE');
+        return isONESIZEAvailable
+          ? [{ value: 'ONESIZE', label: 'ONESIZE' }]
+          : [{ value: '', label: 'ONESIZE Нет в наличии', disabled: true }];
+      } else if (category.newSneakers || category.preorder || category.used) {
+        const sneakerSizes = Array.from({ length: 21 }, (_, index) => {
+          const sizeValue = (index * 0.5 + 4).toString();
+          const isAvailable = availableSizes.includes(parseFloat(sizeValue));
+          return { value: sizeValue, disabled: !isAvailable, label: renderOptionLabel({ value: sizeValue }) };
+        });
+        return sneakerSizes;
+      } else if (category.clothes) {
+        const clothesSizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'].map((size) => {
+          const isAvailable = sizes.includes(size);
+          return {
+            value: size,
+            disabled: !isAvailable,
+            label: isAvailable ? `${size}` : `${size} Нет в наличии`,
+          };
+        });
+        return clothesSizes;
+      }
+      return [];
+    };
+
+    setOptions(generateOptions());
+  }, [category, sizes, availableSizes]);
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 
   const handleChange = (values) => {
     if (values.length > 0) {
@@ -55,6 +94,7 @@ const MyDropdownMenu = ({ sizes, category, vendorCode, img, price, color, brand 
     }
   };
 
+<<<<<<< HEAD
   const addToCartHandler = () => {
     if (selectedSize) {
       const product = {
@@ -71,6 +111,8 @@ const MyDropdownMenu = ({ sizes, category, vendorCode, img, price, color, brand 
     }
   };
 
+=======
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
   const renderOptionLabel = (option) =>
     availableSizes.includes(parseFloat(option.value))
       ? `${option.value} US`
@@ -107,10 +149,27 @@ const MyDropdownMenu = ({ sizes, category, vendorCode, img, price, color, brand 
             </div>
           )}
         />
+<<<<<<< HEAD
         <button className={classes.addToCartButton} onClick={addToCartHandler}>Добавить в корзину</button>
+=======
+        <button className={classes.addToCartButton}>Добавить в корзину</button>
+      </div>
+      <div className={classes.SizeNotAvailable}>
+        <div className={classes.ContactUs}>
+          {category.accessories && (
+            <>
+              Вашего размера не оказалось в наличии?<br /> Свяжитесь с нашим <a href="https://t.me/NiceDunksManager">менеджером</a> и он обязательно поможем вам в этом вопросе!
+            </>
+          )}
+        </div>
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
       </div>
     </div>
   );
 };
 
+<<<<<<< HEAD
 export default MyDropdownMenu;
+=======
+export default MyDropdownMenu;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67

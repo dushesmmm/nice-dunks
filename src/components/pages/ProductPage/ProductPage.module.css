@@ -12,7 +12,11 @@
     max-height: fit-content;
     border: 1px solid black;
     flex-wrap: wrap;
+<<<<<<< HEAD
     margin-right: 5%;
+=======
+    margin-right: 80px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     user-select: none;
     align-items: center;
     justify-content: center;
@@ -32,7 +36,11 @@
 .ProductPage__brand a {
     color: #AC8BD5;
     font-family: Montserrat;
+<<<<<<< HEAD
     font-size: calc(30px + 8 * ((100vw - 320px) / 1600));
+=======
+    font-size: 40px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -45,7 +53,10 @@
 .ProductPage__brand span {
     margin-left: 5px;
     margin-right: 5px;
+<<<<<<< HEAD
     font-size: calc(30px + 8 * ((100vw - 320px) / 1600));
+=======
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 }
 .ProductPage__brand a:hover {
     color: #000;
@@ -54,7 +65,11 @@
 .ProductPage__brand {
     color: #AC8BD5;
     font-family: Montserrat;
+<<<<<<< HEAD
     font-size: calc(30px + 8 * ((100vw - 320px) / 1600));
+=======
+    font-size: 40px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -65,7 +80,11 @@
 .ProductPage__colorway{
     color: #000;
     font-family: Montserrat;
+<<<<<<< HEAD
     font-size: calc(30px + 8 * ((100vw - 320px) / 1600));
+=======
+    font-size: 40px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -76,7 +95,11 @@
 .ProductPage__price {
     color: #000;
     font-family: Montserrat;
+<<<<<<< HEAD
     font-size: calc(30px + 8 * ((100vw - 320px) / 1600));
+=======
+    font-size: 40px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -152,7 +175,11 @@
 .ShippingInformation__title {
     color: #000;
     font-family: Montserrat;
+<<<<<<< HEAD
     font-size: calc(12px + 8 * ((100vw - 320px) / 1600));
+=======
+    font-size: 20px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -163,7 +190,11 @@
     width: 100%;
     color: #000;
     font-family: Montserrat;
+<<<<<<< HEAD
     font-size: calc(12px + 8 * ((100vw - 320px) / 1600));
+=======
+    font-size: 20px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -177,6 +208,7 @@
     width: 50%;
 }
 
+<<<<<<< HEAD
 .description__sizeHint {
     max-width: 576px;
     text-align: justify;
@@ -325,3 +357,5 @@
         width: 100%;
     }
 }
+=======
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67

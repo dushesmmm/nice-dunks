@@ -3,7 +3,11 @@
     width: 60px;
     height: 20px;
     transition-duration: 1s;
+<<<<<<< HEAD
     padding-top: 52px;
+=======
+    padding-top: 40px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     padding-left: 40px;
     cursor: pointer;
 }

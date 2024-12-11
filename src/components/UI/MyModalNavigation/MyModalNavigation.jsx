@@ -75,12 +75,21 @@ const MyModalNavigation = ({ visible, setVisible }) => {
             activeMenu === 'contacts' ? classes.open : ''
           }`}
         >
+<<<<<<< HEAD
           <br/><a href="https://t.me/NiceDunksOrder">ПОЗИЦИИ ПОД ЗАКАЗ</a><br />
           <br/><a href="https://www.instagram.com/_goba_/">личный аккаунт в инстаграме</a><br />
           <br/><a href="https://vk.com/nicedunks">основная страница в вк</a><br />
           <br/><a href="https://www.avito.ru/user/c560662529d1530f9fab8dd500a9934e/profile?src=sharing">мой профиль на авито</a><br />
           <br/><a href="https://instagram.com/donalddunks/">аккаунт для продаж в инстаграмме</a><br />
           <br/><a href="https://t.me/NiceDunksManager">менеджер по предзаказам</a><br /><br /><br />
+=======
+          <br/><a href="https://t.me/NiceDunksOrder" className='classes.myModalNavigation__link'>ПОЗИЦИИ ПОД ЗАКАЗ</a><br />
+          <br/><a href="https://www.instagram.com/_goba_/" className='classes.myModalNavigation__link'>личный аккаунт в инстаграме</a><br />
+          <br/><a href="https://vk.com/nicedunks" className='classes.myModalNavigation__link'>основная страница в вк</a><br />
+          <br/><a href="https://www.avito.ru/user/c560662529d1530f9fab8dd500a9934e/profile?src=sharing" className='classes.myModalNavigation__link'>мой профиль на авито</a><br />
+          <br/><a href="https://instagram.com/donalddunks/" className='classes.myModalNavigation__link'>аккаунт для продаж в инстаграмме</a><br />
+          <br/><a href="https://t.me/NiceDunksManager" className='classes.myModalNavigation__link'>менеджер по предзаказам</a><br /><br /><br />
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
         </li>
       </ul>
       <ul>

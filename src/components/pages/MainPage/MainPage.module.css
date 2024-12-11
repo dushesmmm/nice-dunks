@@ -15,6 +15,7 @@
     width: 43px;
     height: 54px;
     flex-shrink: 0;
+<<<<<<< HEAD
     max-width: 75% !important;
 }
 
@@ -247,3 +248,14 @@
   border-bottom: 1px solid black;
 }
 }
+=======
+}
+
+@media (max-width: 767px) {
+    .banner {
+        background-image: url(./phonebanner.jpg);
+    }
+}
+
+
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67

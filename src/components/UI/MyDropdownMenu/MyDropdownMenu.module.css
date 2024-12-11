@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+=======
+.SizeNotAvailable {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ContactUs {
+    max-width: 576px;
+    text-align: center;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    color: #000;
+    font-size: calc(9px + 8 * ((100vw - 320px) / 1600));
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 .dropdownContainer {
     display: flex;
     align-items: center;
@@ -17,8 +39,12 @@
   
   .addToCartButton {
     font-family: Montserrat;
+<<<<<<< HEAD
     font-size: calc(9px + 8 * ((100vw - 320px) / 1600));
     text-transform: uppercase;
+=======
+    font-size: 20px;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-style: normal;
     line-height: normal;
     width: 288px;
@@ -45,10 +71,13 @@
     color: #ffffff;
     background-color: #AC8BD5;
     transition: 0.3s ease-in;
+<<<<<<< HEAD
 }
 
 @media (max-width: 650px) {
     .dropdownContainer {
         width: 98vw;
     }
+=======
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 }

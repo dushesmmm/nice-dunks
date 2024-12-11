@@ -10,7 +10,10 @@
     transition: left 0.5s ease;
     /* overflow-x: hidden;
     overflow-y: scroll; */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     box-shadow: 3px 2px 20px 0px #00000085;
     z-index: 10;
 }
@@ -26,11 +29,14 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+<<<<<<< HEAD
 
     margin-left: 10px;
     margin-top: 16px;
     margin-bottom: 16px;
 
+=======
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     margin-left: 0.5vw;
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
@@ -45,7 +51,11 @@
 
 .myModalNavigation__link {
     color: #000;
+<<<<<<< HEAD
     font-size: calc(14px + 8 * ((100vw - 320px) / 1600));
+=======
+    font-size: calc(12px + 8 * ((100vw - 320px) / 1600));
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -105,7 +115,11 @@ a {
     overflow: hidden;
     transition: max-height 0.5s ease;
     color: #000;
+<<<<<<< HEAD
     font-size: calc(11px + 6 * ((100vw - 320px) / 1600));
+=======
+    font-size: calc(9px + 8 * ((100vw - 320px) / 1600));
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -130,7 +144,11 @@ p {
     align-items: center;
     cursor: default;
     justify-content: center;
+<<<<<<< HEAD
     margin-top: 20%;
+=======
+    margin-top: 10%;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 }
 
 .myModalNavigation__link:hover {
@@ -148,7 +166,11 @@ p {
 }
 
 .myModalNavigation__logo img {
+<<<<<<< HEAD
     max-width: 50%;
+=======
+    max-width: 75%;
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     height: auto;
 }
 
@@ -162,11 +184,14 @@ p {
         left: 0;
         overflow: hidden;
     }
+<<<<<<< HEAD
     .myModalNavigation__content {
         font-size: calc(13px + 8 * ((100vw - 320px) / 1600));
     }
     .myModalNavigation__title {
         font-size: calc(12px + 8 * ((100vw - 320px) / 1600));
     }
+=======
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
 }
 

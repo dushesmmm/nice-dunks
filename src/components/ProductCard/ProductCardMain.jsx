@@ -21,7 +21,11 @@ const ProductCardMain = ({ product }) => {
 
   return (
     <div className={classes.product__card} onClick={redirectToProductPage}>
+<<<<<<< HEAD
       <img src={images[0]} alt={formatBrand(brand) + " " + silhouette + " " + color} />
+=======
+      <img src={images[0]} alt={brand} />
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
       <h2>{formatBrand(brand) + " " + silhouette + " " + color}</h2>
     </div>
   );

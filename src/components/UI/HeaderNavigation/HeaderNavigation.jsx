@@ -213,6 +213,7 @@ const HeaderNavigation = ({ cartItems }) => {
   };
 
   return (
+<<<<<<< HEAD
     <div className={`${classes.HeaderNavigation__wrapper} ${isFixed ? classes.fixed : (screenWidth <= 486 && isFixedTriggered ? classes.notfixed : '')}`}>
       <div
         className={classes.SearchWrapper}
@@ -225,6 +226,10 @@ const HeaderNavigation = ({ cartItems }) => {
           style={{ marginTop: 39, cursor: 'pointer', marginLeft: 0, marginRight: 0, maxWidth: 100 }}
         />
       </div>
+=======
+    <div className={classes.HeaderNavigation__wrapper}>
+      <img src={search} alt="поиск" style={{ marginTop: 36, cursor: 'pointer', marginLeft: 0, marginRight: 0 }} />
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
       {headerWords.map((word, index) => (
         <div
           className={`${classes.HeaderNavigation} ${word === 'ПРЕДЗАКАЗ' ? classes.preorderButton : ''}`}
@@ -234,6 +239,7 @@ const HeaderNavigation = ({ cartItems }) => {
           {word}
         </div>
       ))}
+<<<<<<< HEAD
       <div
         className={classes.CartWrapper}
         onClick={() => navigateTo('cart')}
@@ -300,6 +306,9 @@ const HeaderNavigation = ({ cartItems }) => {
           </div>
         </div>
       )}
+=======
+      <img src={cart} alt="корзина" style={{ marginTop: 36, cursor: 'pointer', marginLeft: 0, marginRight: 0}}  />
+>>>>>>> 61e66f90a786f08d8bde6db3da65185ed0eb6b67
     </div>
   );
 };
